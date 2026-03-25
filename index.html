@@ -5,147 +5,139 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Sites que Geram Clientes</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
 
 <style>
 :root {
-  --bg: #0b0f19;
-  --primary: #3b82f6;
-  --accent: #22c55e;
-  --text: #e5e7eb;
-  --gray: #9ca3af;
+  --bg:#0b0f19;
+  --primary:#3b82f6;
+  --accent:#22c55e;
+  --text:#e5e7eb;
+  --gray:#9ca3af;
 }
 
-* {
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-  font-family:'Inter', sans-serif;
-}
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Inter',sans-serif;}
 
-body {
-  background: var(--bg);
-  color: var(--text);
-}
+body{background:var(--bg);color:var(--text);}
 
-/* HERO */
-.hero {
-  text-align:center;
+.hero{
   padding:120px 20px;
-  background: radial-gradient(circle at top, #1e3a8a, #020617);
+  text-align:center;
+  background:radial-gradient(circle at top,#1e3a8a,#020617);
 }
 
-.hero h1 {
-  font-size:42px;
-  font-weight:800;
-  max-width:700px;
-  margin:auto;
-}
+.hero h1{font-size:42px;font-weight:800;max-width:700px;margin:auto;}
+.hero p{margin-top:15px;color:var(--gray);font-size:18px;}
 
-.hero p {
-  margin-top:15px;
-  color:var(--gray);
-  font-size:18px;
-}
-
-.btn {
+.btn{
   display:inline-block;
-  margin-top:30px;
+  margin-top:25px;
   padding:16px 32px;
   background:var(--accent);
-  color:white;
+  color:#fff;
   border-radius:10px;
   text-decoration:none;
   font-weight:600;
-  transition:0.3s;
+  transition:.3s;
 }
 
-.btn:hover {
-  transform:scale(1.07);
-  box-shadow:0 0 20px rgba(34,197,94,0.6);
-}
+.btn:hover{transform:scale(1.08);box-shadow:0 0 20px rgba(34,197,94,.6);}
 
-/* SECTION */
-.section {
-  padding:90px 20px;
-  text-align:center;
-}
-
-.section h2 {
-  font-size:32px;
-  margin-bottom:20px;
-}
-
-.grid {
-  display:grid;
-  grid-template-columns:repeat(auto-fit, minmax(250px,1fr));
-  gap:20px;
-  margin-top:40px;
-}
-
-.card {
-  background:#111827;
-  padding:30px;
-  border-radius:15px;
-  transition:0.3s;
-  border:1px solid #1f2937;
-}
-
-.card:hover {
-  transform:translateY(-10px);
-  border-color: var(--primary);
-}
-
-/* BADGE */
-.badge {
-  display:inline-block;
-  margin-top:20px;
-  background:#1f2937;
-  padding:10px 15px;
-  border-radius:20px;
+.bar{
+  margin-top:25px;
   font-size:14px;
+  color:#cbd5e1;
 }
 
-/* TESTIMONIAL */
-.testimonial {
-  max-width:600px;
-  margin:20px auto;
-  font-style:italic;
-  color:#d1d5db;
-}
-
-/* CTA */
-.cta {
-  background:linear-gradient(135deg, #2563eb, #1e40af);
+.section{
   padding:80px 20px;
   text-align:center;
 }
 
-.cta h2 {
-  font-size:32px;
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:20px;
+  margin-top:40px;
 }
 
-.price {
+.card{
+  background:#111827;
+  padding:30px;
+  border-radius:15px;
+  border:1px solid #1f2937;
+  transition:.3s;
+}
+
+.card:hover{
+  transform:translateY(-10px);
+  border-color:var(--primary);
+}
+
+/* antes depois */
+.compare{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:20px;
+  margin-top:30px;
+}
+
+.box{
+  background:#111827;
+  padding:20px;
+  border-radius:12px;
+  width:280px;
+}
+
+.bad{border:1px solid #b91c1c;}
+.good{border:1px solid #22c55e;}
+
+/* depoimento */
+.testimonial{
+  max-width:600px;
+  margin:20px auto;
+  font-style:italic;
+}
+
+/* garantia */
+.guarantee{
+  background:#022c22;
+  padding:20px;
+  border-radius:12px;
+  margin-top:30px;
+}
+
+/* FAQ */
+.faq{
+  text-align:left;
+  max-width:700px;
+  margin:30px auto;
+}
+
+.faq h3{
+  margin-top:15px;
+}
+
+/* CTA */
+.cta{
+  background:linear-gradient(135deg,#2563eb,#1e40af);
+  padding:80px 20px;
+  text-align:center;
+}
+
+.price{
   font-size:26px;
   margin:20px 0;
 }
 
-.old {
-  text-decoration:line-through;
-  color:#cbd5e1;
-}
+.old{text-decoration:line-through;color:#cbd5e1;}
+.new{color:#22c55e;font-weight:bold;}
 
-.new {
-  color:#22c55e;
-  font-weight:bold;
-}
-
-/* FOOTER */
-.footer {
+.footer{
   text-align:center;
   padding:30px;
   color:#9ca3af;
-  font-size:14px;
 }
 </style>
 </head>
@@ -154,39 +146,83 @@ body {
 
 <!-- HERO -->
 <section class="hero">
-  <h1>Seu concorrente já está na frente…<br>e você nem percebeu</h1>
-  <p>Páginas modernas que transformam visitantes em clientes todos os dias</p>
+  <h1>Enquanto você lê isso, seu concorrente está ganhando seus clientes</h1>
+  <p>Páginas feitas para transformar visitantes em mensagens no WhatsApp automaticamente</p>
 
-  <a class="btn" href="https://wa.me/5589981202409?text=Quero%20um%20site%20profissional">
-    Quero dominar meu mercado
+  <a class="btn" href="https://wa.me/5589981202409?text=Quero%20um%20site">
+    Quero parar de perder clientes
   </a>
 
-  <div class="badge">🔥 Alta conversão • 📱 Mobile • ⚡ Rápido</div>
+  <div class="bar">🔥 Alta conversão • 📱 Mobile • ⚡ Rápido • 💬 WhatsApp direto</div>
 </section>
 
-<!-- BENEFÍCIOS -->
+<!-- BENEFICIOS -->
 <section class="section">
-  <h2>Por que isso funciona</h2>
+  <h2>O que muda quando você tem isso</h2>
 
   <div class="grid">
-    <div class="card">Seu cliente entende em segundos</div>
-    <div class="card">Clique direto para WhatsApp</div>
-    <div class="card">Visual que transmite confiança</div>
-    <div class="card">Mais pedidos todos os dias</div>
+    <div class="card">Seu negócio parece maior</div>
+    <div class="card">Clientes confiam mais</div>
+    <div class="card">Mais mensagens no WhatsApp</div>
+    <div class="card">Mais vendas todos os dias</div>
   </div>
 </section>
 
-<!-- AUTORIDADE -->
+<!-- ANTES VS DEPOIS -->
+<section class="section">
+  <h2>Antes vs Depois</h2>
+
+  <div class="compare">
+    <div class="box bad">
+      ❌ Perfil simples<br>
+      ❌ Pouca confiança<br>
+      ❌ Poucos clientes
+    </div>
+
+    <div class="box good">
+      ✅ Site profissional<br>
+      ✅ Mais autoridade<br>
+      ✅ Mais vendas
+    </div>
+  </div>
+</section>
+
+<!-- PROVA -->
 <section class="section">
   <h2>Resultados percebidos</h2>
 
-  <p class="testimonial">“Comecei a receber clientes todos os dias depois do site.”</p>
-  <p class="testimonial">“Meu negócio parece muito maior agora.”</p>
+  <p class="testimonial">“Depois do site comecei a receber clientes todo dia.”</p>
+  <p class="testimonial">“Meu negócio ficou muito mais profissional.”</p>
+</section>
+
+<!-- GARANTIA -->
+<section class="section">
+  <h2>Zero risco</h2>
+
+  <div class="guarantee">
+    Se você não gostar do resultado, ajusto até ficar perfeito.
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section">
+  <h2>Dúvidas comuns</h2>
+
+  <div class="faq">
+    <h3>Em quanto tempo fica pronto?</h3>
+    <p>Até 2 dias.</p>
+
+    <h3>Funciona no celular?</h3>
+    <p>Sim, totalmente otimizado.</p>
+
+    <h3>Preciso entender de tecnologia?</h3>
+    <p>Não, você só recebe pronto.</p>
+  </div>
 </section>
 
 <!-- CTA FINAL -->
 <section class="cta">
-  <h2>Você pode continuar invisível… ou crescer</h2>
+  <h2>Ou você cresce… ou continua igual</h2>
 
   <div class="price">
     <span class="old">R$200</span> → 
